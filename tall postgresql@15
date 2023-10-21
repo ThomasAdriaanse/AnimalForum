@@ -1,0 +1,60 @@
+[0;1;32m●[0m DESKTOP-T8PUJ67
+    State: [0;1;32mrunning[0m
+     Jobs: 0 queued
+   Failed: 0 units
+    Since: Sun 2023-10-15 10:03:04 PDT; 1min 39s ago
+   CGroup: /
+           ├─user.slice
+           │ └─user-1000.slice
+           │   ├─user@1000.service
+           │   │ └─init.scope
+           │   │   ├─723 /lib/systemd/systemd --user
+           │   │   └─724 (sd-pam)
+           │   └─session-c1.scope
+           │     ├─403 /bin/login -f
+           │     └─735 -bash
+           ├─init.scope
+           │ └─1 /sbin/init
+           └─system.slice
+             ├─systemd-networkd.service
+             │ └─193 /lib/systemd/systemd-networkd
+             ├─systemd-udevd.service
+             │ └─68 /lib/systemd/systemd-udevd
+             ├─cron.service
+             │ └─219 /usr/sbin/cron -f
+             ├─polkit.service
+             │ └─235 /usr/lib/policykit-1/polkitd --no-debug
+             ├─networkd-dispatcher.service
+             │ └─199 /usr/bin/python3 /usr/bin/networkd-dispatcher --run-startup-triggers
+             ├─accounts-daemon.service
+             │ └─222 /usr/lib/accountsservice/accounts-daemon
+             ├─systemd-journald.service
+             │ └─56 /lib/systemd/systemd-journald
+             ├─atd.service
+             │ └─220 /usr/sbin/atd -f
+             ├─unattended-upgrades.service
+             │ └─236 /usr/bin/python3 /usr/share/unattended-upgrades/unattended-upgrade-shutdown --wait-for-signal
+             ├─ssh.service
+             │ └─271 /usr/sbin/sshd -D
+             ├─system-postgresql.slice
+             │ └─postgresql@10-main.service
+             │   ├─308 /usr/lib/postgresql/10/bin/postgres -D /var/lib/postgresql/10/main -c config_file=/etc/postgresql/10/main/postgresql.conf
+             │   ├─346 postgres: 10/main: checkpointer process   
+             │   ├─347 postgres: 10/main: writer process   
+             │   ├─348 postgres: 10/main: wal writer process   
+             │   ├─349 postgres: 10/main: autovacuum launcher process   
+             │   ├─350 postgres: 10/main: stats collector process   
+             │   └─351 postgres: 10/main: bgworker: logical replication launcher   
+             ├─rsyslog.service
+             │ └─196 /usr/sbin/rsyslogd -n
+             ├─console-getty.service
+             │ └─255 /sbin/agetty -o -p -- \u --noclear --keep-baud console 115200,38400,9600 vt220
+             ├─systemd-resolved.service
+             │ └─226 /lib/systemd/systemd-resolved
+             ├─dbus.service
+             │ └─200 /usr/bin/dbus-daemon --system --address=systemd: --nofork --nopidfile --systemd-activation --syslog-only
+             ├─system-getty.slice
+             │ └─getty@tty1.service
+             │   └─256 /sbin/agetty -o -p -- \u --noclear tty1 linux
+             └─systemd-logind.service
+               └─223 /lib/systemd/systemd-logind

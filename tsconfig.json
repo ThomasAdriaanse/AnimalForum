@@ -15,6 +15,7 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "strictBindCallApply": true,
+    "noEmit": true,
     "allowImportingTsExtensions": true
   },
   "include": [
