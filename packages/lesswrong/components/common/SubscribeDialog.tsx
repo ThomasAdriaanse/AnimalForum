@@ -79,7 +79,7 @@ function timePerWeekFromPosts(posts: number) {
   return `${Math.round(minutes / 60)} hours`
 }
 
-/** Posts per week as of May 2022 */
+/** Posts per week as of May 2022 *//*
 const postsPerWeek = forumSelect<Record<string, number>>({
   EAForum: {
     '2': 119,
@@ -102,7 +102,7 @@ const postsPerWeek = forumSelect<Record<string, number>>({
     '30': 2,
     '45': 1,
   },
-});
+});*/
 
 const viewNames = {
   'frontpage': 'Frontpage',
@@ -293,8 +293,8 @@ class SubscribeDialog extends Component<SubscribeDialogProps,SubscribeDialogStat
                 ) }
               </RadioGroup>
               <DialogContentText className={classes.estimate}>
-                That's roughly { postsPerWeek[threshold] } posts per week
-                ({ timePerWeekFromPosts(postsPerWeek[threshold]) } of reading)
+                {/*That's roughly { postsPerWeek[threshold] } posts per week*/}
+                {/*({ timePerWeekFromPosts(postsPerWeek[threshold]) } of reading)*/}
               </DialogContentText>
             </div>}
 
